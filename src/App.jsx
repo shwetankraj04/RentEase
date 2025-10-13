@@ -3,8 +3,8 @@ import Hero from "./components/Hero";
 import Packages from "./components/Packages";
 import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
-import Listings from "./components/Listing";
-import SearchSection from "./components/Searchsection";
+import Listings from "./components/Listings";
+import SearchSection from "./components/SearchSection";
 import Enquiry from "./components/Enquiry";
 import About from "./components/About";
 
