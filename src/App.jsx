@@ -18,10 +18,10 @@ function App() {
     <div className="min-h-screen bg-gray-50">
       <Navbar />
       <Hero />
-      <About />
-      <WhoWeAre />
       <SearchSection />
       <Listings />
+      <About />
+      <WhoWeAre />
       <Packages />
       <Testimonials />
       <QuoteSection />
