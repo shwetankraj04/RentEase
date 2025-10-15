@@ -12,6 +12,8 @@ import QuoteSection from "./components/QuoteSection";
 import WhyChooseUs from "./components/WhyChooseUs";
 import AssociatesWith from "./components/AssociatesWith";
 import StatsSection from "./components/StatsSection";
+import ScrollToTop from "./components/ScrollToTop";
+import Chatbot from "./components/Chatbot";
 
 function App() {
   return (
@@ -30,6 +32,8 @@ function App() {
       <StatsSection />
       <Enquiry />
       <Footer />
+      <ScrollToTop />
+      <Chatbot />
     </div>
   );
 }

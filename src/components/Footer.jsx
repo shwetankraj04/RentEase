@@ -1,18 +1,21 @@
+import React from "react";
+import { FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300 mt-16">
-      <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+      <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
         <div>
-          <h2 className="text-2xl font-bold text-white mb-3">RentEase</h2>
-          <p className="text-sm leading-relaxed">
+          <h2 className="text-3xl font-bold text-white mb-4">RentEase</h2>
+          <p className="text-sm md:text-base leading-relaxed">
             Simplifying your rental journey. Pay rent, post properties, and
             explore tailored packages for owners and brokers — all at one place.
           </p>
         </div>
 
         <div>
-          <h3 className="text-lg font-semibold text-white mb-4">Quick Links</h3>
-          <ul className="space-y-2 text-sm">
+          <h3 className="text-xl font-semibold text-white mb-5">Quick Links</h3>
+          <ul className="space-y-3 text-sm md:text-base">
             <li>
               <a href="#home" className="hover:text-white transition-colors">
                 Home
@@ -43,10 +46,10 @@ export default function Footer() {
         </div>
 
         <div>
-          <h3 className="text-lg font-semibold text-white mb-4">
+          <h3 className="text-xl font-semibold text-white mb-5">
             For Partners
           </h3>
-          <ul className="space-y-2 text-sm">
+          <ul className="space-y-3 text-sm md:text-base">
             <li>
               <a href="#owners" className="hover:text-white transition-colors">
                 For Owners
@@ -61,39 +64,39 @@ export default function Footer() {
         </div>
 
         <div>
-          <h3 className="text-lg font-semibold text-white mb-4">
+          <h3 className="text-xl font-semibold text-white mb-5">
             Get in Touch
           </h3>
-          <ul className="space-y-2 text-sm">
+          <ul className="space-y-3 text-sm md:text-base">
             <li>📍 Raipur, India</li>
             <li>📞 +91 98765 43210</li>
             <li>✉️ support@rentease.com</li>
           </ul>
-          <div className="flex items-center space-x-4 mt-4">
+          <div className="flex items-center space-x-5 mt-6">
             <a
               href="#"
               className="hover:text-white transition-colors duration-200"
             >
-              <i className="fab fa-facebook-f"></i>
+              <FaFacebookF size={20} />
             </a>
             <a
               href="#"
               className="hover:text-white transition-colors duration-200"
             >
-              <i className="fab fa-twitter"></i>
+              <FaTwitter size={20} />
             </a>
             <a
               href="#"
               className="hover:text-white transition-colors duration-200"
             >
-              <i className="fab fa-linkedin-in"></i>
+              <FaLinkedinIn size={20} />
             </a>
           </div>
         </div>
       </div>
 
-      <div className="border-t border-gray-800 text-center py-6 text-sm text-gray-500">
-        © {new Date().getFullYear()} RentEase. All Rights Reserved.
+      <div className="border-t border-gray-800 text-center py-6 text-sm md:text-base text-gray-500">
+        © {new Date().getFullYear()} Mahesh Ventures. All Rights Reserved.
       </div>
     </footer>
   );

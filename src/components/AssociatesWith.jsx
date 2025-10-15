@@ -40,25 +40,25 @@ export default function AssociatesWith() {
   ];
 
   return (
-    <section className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-6 text-center">
-        <h2 className="text-3xl font-bold text-gray-800 mb-12">
+    <section className="py-20 bg-white font-sans">
+      <div className="max-w-[90rem] mx-auto px-8 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-12">
           RentEase’s Associates With
         </h2>
 
-        <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
           {associates.map((item) => (
             <div
               key={item.id}
-              className="bg-gray-50 rounded-2xl shadow-md hover:shadow-xl transition transform hover:-translate-y-1"
+              className="bg-gray-50 rounded-2xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2 duration-300"
             >
               <img
                 src={item.image}
                 alt={item.title}
-                className="w-full h-50 object-cover rounded-t-2xl bg-white p-4"
+                className="w-full h-48 object-cover rounded-t-2xl p-4 bg-white"
               />
               <div className="p-6">
-                <h3 className="text-lg font-semibold text-gray-800 mb-3">
+                <h3 className="text-lg font-semibold text-gray-800 mb-2">
                   {item.title}
                 </h3>
                 <p className="text-gray-600 text-sm leading-relaxed">

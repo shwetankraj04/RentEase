@@ -21,43 +21,52 @@ function Testimonials() {
         "I could pay my rent securely in seconds. The reminders and receipts system make it stress-free every month.",
       img: "https://randomuser.me/api/portraits/men/65.jpg",
     },
+    // Add more cards if needed
   ];
 
   return (
-    <section className="py-20 bg-gray-50" id="testimonials">
+    <section className="py-20 bg-gray-50 font-sans" id="testimonials">
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-16">
           <h3 className="text-3xl md:text-4xl font-bold text-gray-800">
             What Our Users Say
           </h3>
-          <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
+          <p className="text-gray-600 mt-3 max-w-2xl mx-auto text-lg">
             Thousands of owners, brokers, and tenants trust our platform every
             day. Here’s what some of them have to say:
           </p>
         </div>
 
-        {/* Testimonials Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {/* Scrollable Testimonials */}
+        <div className="flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide">
           {testimonials.map((t, index) => (
             <div
               key={index}
-              className="bg-white shadow-md rounded-xl p-6 hover:shadow-lg transition"
+              className="flex-shrink-0 w-80 md:w-96 bg-white shadow-lg rounded-2xl p-8 flex flex-col transition transform hover:-translate-y-1 hover:shadow-2xl duration-300 snap-center"
             >
-              <div className="flex items-center gap-4 mb-4">
+              {/* User Info */}
+              <div className="flex items-center gap-4 mb-6">
                 <img
                   src={t.img}
                   alt={t.name}
-                  className="w-14 h-14 rounded-full object-cover"
+                  className="w-16 h-16 rounded-full object-cover border-2 border-gradient-to-r from-[#1B365D] to-[#2C4E80]"
                 />
                 <div>
-                  <h4 className="font-semibold text-gray-800">{t.name}</h4>
+                  <h4 className="font-semibold text-gray-800 text-lg">
+                    {t.name}
+                  </h4>
                   <p className="text-sm text-gray-500">{t.role}</p>
                 </div>
               </div>
-              <p className="text-gray-600 text-sm leading-relaxed">
+
+              {/* Quote */}
+              <p className="text-gray-600 text-sm md:text-base leading-relaxed flex-1">
                 “{t.quote}”
               </p>
+
+              {/* Accent line */}
+              <div className="mt-6 h-1 w-12 bg-gradient-to-r from-[#1B365D] to-[#2C4E80] rounded-full mx-auto"></div>
             </div>
           ))}
         </div>

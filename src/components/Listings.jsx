@@ -27,41 +27,57 @@ const listings = [
 
 export default function Listings() {
   return (
-    <section id="listings" className="bg-gray-50 py-16">
+    <section id="listings" className="bg-gray-50 py-20">
       <div className="max-w-7xl mx-auto px-6 text-center">
-        <h2 className="text-3xl font-bold text-gray-800 mb-10">
-          Featured Listings
+        <h2 className="text-4xl font-bold text-gray-800 mb-4">
+          Featured <span className="text-[#1B365D]">Listings</span>
         </h2>
+        <p className="text-gray-500 mb-12 max-w-2xl mx-auto">
+          Discover premium properties handpicked for you. Browse through top
+          apartments, villas, and studios in India’s leading cities.
+        </p>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-10">
           {listings.map((listing) => (
             <div
               key={listing.id}
-              className="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition"
+              className="bg-white rounded-2xl shadow-lg overflow-hidden transform hover:-translate-y-2 hover:shadow-2xl transition duration-300 flex flex-col"
             >
-              <img
-                src={listing.image}
-                alt={listing.title}
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-5 text-left">
-                <h3 className="text-xl font-semibold text-gray-800 mb-2">
+              {/* Image */}
+              <div className="relative overflow-hidden">
+                <img
+                  src={listing.image}
+                  alt={listing.title}
+                  className="w-full h-56 object-cover transition-transform duration-500 hover:scale-110"
+                />
+              </div>
+
+              {/* Content */}
+              <div className="p-6 flex flex-col flex-1">
+                <h3 className="text-xl font-semibold text-gray-800 mb-1">
                   {listing.title}
                 </h3>
-                <p className="text-gray-600 mb-1">{listing.location}</p>
-                <p className="text-blue-600 font-semibold">{listing.price}</p>
-                <button className="mt-auto bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
-                  Rent Now
-                </button>
-                <button className="mt-auto bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition ml-2">
-                  Buy Now
-                </button>
+                <p className="text-gray-600 mb-2">{listing.location}</p>
+                <p className="text-[#D4AF37] font-bold text-lg mb-4">
+                  {listing.price}
+                </p>
+
+                {/* Buttons */}
+                <div className="mt-auto flex gap-3">
+                  <button className="flex-1 bg-gradient-to-r from-[#1B365D] to-[#2C4E80] text-white py-2.5 rounded-lg hover:opacity-90 transition font-medium cursor-pointer">
+                    Rent Now
+                  </button>
+                  <button className="flex-1 border-2 border-[#1B365D] text-[#1B365D] py-2.5 rounded-lg hover:bg-[#1B365D] hover:text-white transition font-medium cursor-pointer">
+                    Buy Now
+                  </button>
+                </div>
               </div>
             </div>
           ))}
         </div>
 
-        <button className="mt-10 bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition cursor-pointer">
+        {/* View All Button */}
+        <button className="mt-14 bg-gradient-to-r from-[#1B365D] to-[#2C4E80] text-white px-8 py-3 rounded-full text-lg font-semibold hover:opacity-90 transition cursor-pointer">
           View All Properties
         </button>
       </div>
