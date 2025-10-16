@@ -1,10 +1,10 @@
 export default function About() {
   return (
-    <section className="bg-gray-50 py-20 font-poppins">
+    <section id="about" className="bg-gray-50 py-20 font-poppins">
       <div className="max-w-6xl mx-auto px-6">
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-extrabold text-[#1B365D] text-center mb-12 leading-snug">
-          About RentEase
+          About Mahesh Ventures
         </h2>
 
         {/* Image + Text */}
@@ -21,10 +21,10 @@ export default function About() {
           {/* Description */}
           <div className="md:w-1/2 text-gray-700 text-base md:text-lg leading-relaxed">
             <p className="mb-4">
-              At RentEase, our mission is to simplify the rental experience for
-              everyone. Whether you are a tenant, owner, or broker, we provide
-              seamless solutions to manage properties, pay rent, and explore
-              packages that suit your needs.
+              At Mahesh Ventures, our mission is to simplify the rental
+              experience for everyone. Whether you are a tenant, owner, or
+              broker, we provide seamless solutions to manage properties, pay
+              rent, and explore packages that suit your needs.
             </p>
 
             <p className="mb-4">

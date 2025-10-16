@@ -22,11 +22,12 @@ function Packages() {
         {/* Grid: Features + Packages */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
           {/* Highlights Card */}
-          <div className="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl border border-transparent hover:border-[#1B365D]/40 transform hover:-translate-y-2 transition duration-300">
-            <h4 className="text-xl font-semibold text-gray-800 mb-6">
+          <div className="bg-gradient-to-b from-[#f0f4ff] to-white rounded-2xl p-8 shadow-lg border border-[#1B365D]/20 hover:shadow-2xl transform hover:-translate-y-2 transition duration-300">
+            <h4 className="text-xl font-semibold text-gray-800 mb-2">
               Highlights
             </h4>
-            <ul className="space-y-5">
+            <div className="w-16 h-1 bg-[#1B365D] rounded-full mb-6"></div>
+            <ul className="space-y-5 text-gray-700 text-sm">
               <li className="flex gap-4 items-start">
                 <span className="flex-none p-2 bg-[#1B365D]/10 rounded-lg text-[#1B365D]">
                   <svg
@@ -44,12 +45,8 @@ function Packages() {
                   </svg>
                 </span>
                 <div>
-                  <div className="font-medium text-gray-800">
-                    Secure Rent Payments
-                  </div>
-                  <div className="text-gray-600 text-sm">
-                    Fast, regular, and traceable payments for tenants.
-                  </div>
+                  <div className="font-medium">Secure Rent Payments</div>
+                  <div>Fast, regular, and traceable payments for tenants.</div>
                 </div>
               </li>
               <li className="flex gap-4 items-start">
@@ -69,10 +66,8 @@ function Packages() {
                   </svg>
                 </span>
                 <div>
-                  <div className="font-medium text-gray-800">
-                    Post Property Easily
-                  </div>
-                  <div className="text-gray-600 text-sm">
+                  <div className="font-medium">Post Property Easily</div>
+                  <div>
                     Add listings with photos, details and instant publishing.
                   </div>
                 </div>
@@ -94,12 +89,8 @@ function Packages() {
                   </svg>
                 </span>
                 <div>
-                  <div className="font-medium text-gray-800">
-                    Analytics for Owners
-                  </div>
-                  <div className="text-gray-600 text-sm">
-                    Track views, leads and rent performance over time.
-                  </div>
+                  <div className="font-medium">Analytics for Owners</div>
+                  <div>Track views, leads and rent performance over time.</div>
                 </div>
               </li>
             </ul>
@@ -114,16 +105,14 @@ function Packages() {
           </div>
 
           {/* Owner Package */}
-          <div className="bg-white rounded-2xl p-8 shadow-md border border-transparent hover:border-[#1B365D]/40 transform hover:-translate-y-2 transition duration-300">
-            <div className="flex items-center justify-between">
-              <h4 className="text-2xl font-bold text-gray-800">Owners</h4>
-              <span className="text-sm text-gray-500">Best for landlords</span>
-            </div>
-            <p className="text-gray-600 mt-4">
+          <div className="bg-white rounded-2xl p-8 shadow-lg border border-[#2563EB]/20 hover:shadow-2xl transform hover:-translate-y-2 transition duration-300">
+            <h4 className="text-2xl font-bold text-gray-800 mb-2">Owners</h4>
+            <div className="w-20 h-1 bg-[#1B365D] rounded-full mb-4"></div>
+            <p className="text-gray-600">
               Publish multiple properties, manage tenants, and collect rent with
               detailed reports.
             </p>
-            <ul className="mt-6 space-y-3 text-gray-600 text-sm">
+            <ul className="mt-4 space-y-2 text-gray-600 text-sm">
               <li>Unlimited listings</li>
               <li>Tenant screening</li>
               <li>Auto rent reminders</li>
@@ -142,18 +131,14 @@ function Packages() {
           </div>
 
           {/* Broker Package */}
-          <div className="bg-white rounded-2xl p-8 shadow-md border border-transparent hover:border-[#1B365D]/40 transform hover:-translate-y-2 transition duration-300">
-            <div className="flex items-center justify-between">
-              <h4 className="text-2xl font-bold text-gray-800">Brokers</h4>
-              <span className="text-sm text-gray-500">
-                For agents & brokers
-              </span>
-            </div>
-            <p className="text-gray-600 mt-4">
+          <div className="bg-white rounded-2xl p-8 shadow-lg border border-[#1D4ED8]/20 hover:shadow-2xl transform hover:-translate-y-2 transition duration-300">
+            <h4 className="text-2xl font-bold text-gray-800 mb-2">Brokers</h4>
+            <div className="w-20 h-1 bg-[#1B365D] rounded-full mb-4"></div>
+            <p className="text-gray-600">
               Tools to manage clients, share listings, and gain priority
               placement in searches.
             </p>
-            <ul className="mt-6 space-y-3 text-gray-600 text-sm">
+            <ul className="mt-4 space-y-2 text-gray-600 text-sm">
               <li>Priority listing placement</li>
               <li>Client management tools</li>
               <li>In-platform messaging</li>

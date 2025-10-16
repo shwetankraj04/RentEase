@@ -1,3 +1,5 @@
+import { FaQuoteLeft } from "react-icons/fa";
+
 function Testimonials() {
   const testimonials = [
     {
@@ -21,12 +23,17 @@ function Testimonials() {
         "I could pay my rent securely in seconds. The reminders and receipts system make it stress-free every month.",
       img: "https://randomuser.me/api/portraits/men/65.jpg",
     },
-    // Add more cards if needed
   ];
 
   return (
-    <section className="py-20 bg-gray-50 font-sans" id="testimonials">
-      <div className="max-w-7xl mx-auto px-6">
+    <section
+      id="testimonials"
+      className="py-20 bg-gradient-to-b from-gray-50 to-gray-100 font-sans relative overflow-hidden"
+    >
+      {/* Subtle Background Pattern */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_1px_1px,_#d1d5db_1px,_transparent_0)] bg-[length:20px_20px] opacity-20"></div>
+
+      <div className="max-w-7xl mx-auto px-6 relative z-10">
         {/* Heading */}
         <div className="text-center mb-16">
           <h3 className="text-3xl md:text-4xl font-bold text-gray-800">
@@ -39,18 +46,24 @@ function Testimonials() {
         </div>
 
         {/* Scrollable Testimonials */}
-        <div className="flex gap-6 overflow-x-auto snap-x snap-mandatory scrollbar-hide">
+        <div className="flex gap-8 overflow-x-auto snap-x snap-mandatory scrollbar-hide pb-4">
           {testimonials.map((t, index) => (
             <div
               key={index}
-              className="flex-shrink-0 w-80 md:w-96 bg-white shadow-lg rounded-2xl p-8 flex flex-col transition transform hover:-translate-y-1 hover:shadow-2xl duration-300 snap-center"
+              className="relative flex-shrink-0 w-80 md:w-96 bg-white border border-transparent bg-clip-padding rounded-2xl p-8 flex flex-col shadow-md hover:shadow-xl duration-300 snap-center transition transform hover:-translate-y-2 group"
+              style={{
+                borderImage: "linear-gradient(to right, #1B365D, #2C4E80) 1",
+              }}
             >
+              {/* Floating Quote Icon */}
+              <FaQuoteLeft className="absolute top-5 right-6 text-[#1B365D]/20 text-2xl" />
+
               {/* User Info */}
               <div className="flex items-center gap-4 mb-6">
                 <img
                   src={t.img}
                   alt={t.name}
-                  className="w-16 h-16 rounded-full object-cover border-2 border-gradient-to-r from-[#1B365D] to-[#2C4E80]"
+                  className="w-16 h-16 rounded-full object-cover ring-2 ring-[#1B365D]/20"
                 />
                 <div>
                   <h4 className="font-semibold text-gray-800 text-lg">
@@ -61,12 +74,12 @@ function Testimonials() {
               </div>
 
               {/* Quote */}
-              <p className="text-gray-600 text-sm md:text-base leading-relaxed flex-1">
+              <p className="text-gray-700 text-sm md:text-base leading-relaxed italic flex-1">
                 “{t.quote}”
               </p>
 
-              {/* Accent line */}
-              <div className="mt-6 h-1 w-12 bg-gradient-to-r from-[#1B365D] to-[#2C4E80] rounded-full mx-auto"></div>
+              {/* Decorative Accent */}
+              <div className="mt-6 h-1.5 w-16 bg-gradient-to-r from-[#1B365D] to-[#2C4E80] rounded-full mx-auto group-hover:w-20 transition-all duration-300"></div>
             </div>
           ))}
         </div>

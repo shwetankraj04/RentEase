@@ -2,7 +2,7 @@ const listings = [
   {
     id: 1,
     title: "Modern 2BHK Apartment",
-    location: "Koramangala, Bangalore",
+    location: "Civil Lines, Raipur",
     price: "₹25,000/month",
     image:
       "https://images.unsplash.com/photo-1560185127-6ed189bf02f4?auto=format&fit=crop&w=800&q=60",
@@ -10,7 +10,7 @@ const listings = [
   {
     id: 2,
     title: "Cozy Studio Flat",
-    location: "Powai, Mumbai",
+    location: "Shankar Nagar, Raipur",
     price: "₹18,000/month",
     image:
       "https://r1imghtlak.mmtcdn.com/95aa40ad-86df-4042-8c92-290bd5b9ec4f.png",
@@ -18,10 +18,34 @@ const listings = [
   {
     id: 3,
     title: "Spacious 3BHK Villa",
-    location: "Sector 62, Noida",
+    location: "Naya Raipur, Raipur",
     price: "₹40,000/month",
     image:
       "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=60",
+  },
+  {
+    id: 4,
+    title: "Luxury 4BHK Penthouse",
+    location: "Dhurva, Raipur",
+    price: "₹65,000/month",
+    image:
+      "https://images.pexels.com/photos/7045918/pexels-photo-7045918.jpeg?cs=srgb&dl=pexels-heyho-7045918.jpg&fm=jpg",
+  },
+  {
+    id: 5,
+    title: "Elegant 1BHK Apartment",
+    location: "Pandri, Raipur",
+    price: "₹15,000/month",
+    image:
+      "https://t3.ftcdn.net/jpg/01/17/36/36/360_F_117363622_IJciaxF3JQLBiXBJL8qZEl5kRPv9jMAr.jpg",
+  },
+  {
+    id: 6,
+    title: "Modern 3BHK Independent House",
+    location: "Geetanjali Nagar, Raipur",
+    price: "₹35,000/month",
+    image:
+      "https://thegreenfortune.com/wp-content/uploads/2025/07/download-54-404x500.webp",
   },
 ];
 

@@ -6,7 +6,9 @@ export default function Footer() {
     <footer className="bg-gray-900 text-gray-300 mt-16">
       <div className="max-w-7xl mx-auto px-6 py-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
         <div>
-          <h2 className="text-3xl font-bold text-white mb-4">RentEase</h2>
+          <h2 className="text-3xl font-bold text-white mb-4">
+            Mahesh Ventures
+          </h2>
           <p className="text-sm md:text-base leading-relaxed">
             Simplifying your rental journey. Pay rent, post properties, and
             explore tailored packages for owners and brokers — all at one place.
@@ -30,15 +32,12 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a
-                href="#post-property"
-                className="hover:text-white transition-colors"
-              >
-                Post Property
+              <a href="#about" className="hover:text-white transition-colors">
+                About Us
               </a>
             </li>
             <li>
-              <a href="#contact" className="hover:text-white transition-colors">
+              <a href="#enquiry" className="hover:text-white transition-colors">
                 Contact Us
               </a>
             </li>

@@ -21,10 +21,10 @@ export default function WhoWeAre() {
           />
           <div className="text-left md:text-justify max-w-3xl">
             <h3 className="text-2xl font-semibold text-gray-800 mb-2">
-              Nikhil Verma
+              Mahesh
             </h3>
             <p className="text-[#1B365D] font-medium mb-4">
-              Founder, RentEase Group
+              Founder, Mahesh Ventures Group
             </p>
             <p className="text-gray-700 leading-relaxed mb-4">
               Nikhil Verma comes from a diverse business background but
